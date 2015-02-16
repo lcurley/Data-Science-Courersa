@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10740\viewh13620\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 \ul \ulc0 Git\ulnone \
+\
+Version control: create something, change it, save it again\
+	good for coordinating with collaborators\
+\
+Git can handle all size projects\
+created by Linux developers\
+Most popular version control system\
+everything stored in local repositories on your computer - operated on from command line\
+\
+Mac users use git through terminal (windows use git bash)\
+\
+Each commit to a git repository will be \'93tagged\'94 with the username of the person who made the commit\
+\
+\ul Github\ulnone \
+\
+web-based hosting service for software development projects made using git version control\
+\'93push\'94 and \'93pull\'94 local repositories to and from remote repositories on the web\
+provides homepage with repositories\
+repositories backed up on the server in case local copies are corrupted\
+users can find each other and share projects\
+\
+homepage shows all your activity and what you\'92re working on \
+edit profile to list basic info about yourself\
+\
+git = local, on your computer\
+github = remote, on the web\
+\
+Creating a repository (\'93repo\'94)\
+github.com/username\
+to create new repository from scratch use \'93+\'94 in upper right hand corner\
+or, \'91fork\'92 another user\'92s repository\
+\
+create a name for your repo and type a brief description\
+select public - private require paid account or educational account\
+check box \'93initialize repository with ReadMe\'94\
+\
+create a copy of repo on your computer to make changes to it\
+create directory on your computer: mkdir ~/datasciencecoursera\
+navigate to directory using cd\
+initialize local git repository - git init\
+point local repository to remote repo\
+git remote add origin http://github.com/lcurley/datasciencecoursera.git\
+\
+fork another user\'92s repo:\
+http://help.github.com/articles/fork-a-repo\
+go to a repository and click \'93fork\'94\
+creates copy in your github profile\
+need to make a local copy on your computer using: git clone http://github.com/lcurley/repoNameHere.git\
+\
+push changes to github periodically\
+\
+\ul Basic Git Commands\ulnone \
+\
+pushing and pulling\
+workspace \'97 index \'97 local repository \'97 remote repository (github)\
+start in workspace, add file to index, commit that file to the local repository and push it to github\
+\
+add new files to a local repository under version control\
+let git know to track them\
+git add . 	adds all new files in current directory\
+git add -u	updates tracking for files that changed names or were deleted\
+git add -A	does both of . and -u (both of above) \'97 doesn\'92t seem to work very well\
+do this before committing\
+\
+changes you want to commit, type:\
+git commit -m \'93message\'94		message is description of what you did, what are the updates\
+only updates local repo, not remote repo on github\
+\
+saved local commits you want to update on github; pushing:\
+git push	pushes everything to github\
+\
+don\'92t want to edit version everyone else is working on; create a branch:\
+git checkout -b branchname	creates a new branch for that project\
+see what branch you are on:\
+git branch\
+switch back to master branch:\
+git checkout master\
+\
+for someone\'92s repo or have multiple branches, want to merge changes into other branch/repo; pull request:\
+pull request is unique feature of github\
+go to github and choose the branch, click on \'93compare a pull request\'94\
+sends notification - person decides to merge or not\
+\
+git documentation: http://git-scm.com/doc\
+github help: http://help.github.com/\
+google/stack overflow\
+\
+Basic markdown\
+text file with specific formatting\
+github and r, rstudio recognize this file type\
+file extension is \'93.md\'94\
+Markdown syntax\
+create headings:\
+## this is a secondary heading\
+### this is a tertiary heading (smaller heading)\
+unordered lists (creates bullet points):\
+* first item\
+* second item\
+* third item\
+\
+http://daringfireball.net/projects/markdown/\
+http://www.rstudio.com/ide/docs/authoring/using_markdown\
+\
+\
+\
+\
+}
